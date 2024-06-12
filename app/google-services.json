@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044555851355",
+    "project_id": "absence-stager",
+    "storage_bucket": "absence-stager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044555851355:android:b53b71b27d035a4962817e",
+        "android_client_info": {
+          "package_name": "com.example.absenceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_hZuM803iVISzq1fqhcPAmKvhR4E_l9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

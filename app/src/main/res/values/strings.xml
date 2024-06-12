@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Absence App</string>
+    <string name="log_in">Log In</string>
+    <string name="button">button</string>
+    <string name="_22_03_2001_1_00">22/03/2001;1:00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_file_to_fire_base">Add file to fire base</string>
+</resources>
