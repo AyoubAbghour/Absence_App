@@ -24,7 +24,7 @@ public class Hours_Absence_Stagger_Activity extends AppCompatActivity {
         // Initialize absent staggers and update UI
         setAbsent_Staggers();
 
-    }
+          }
     public void setAbsent_Staggers() {
         absent_Staggers = new ArrayList<>();
         absent_Staggers.add(new Absent_Stager("Ayoub","Abghour"));
@@ -34,10 +34,10 @@ public class Hours_Absence_Stagger_Activity extends AppCompatActivity {
         absent_Staggers.add(new Absent_Stager("Ayoub","Abghour"));
         absent_Staggers.add(new Absent_Stager("Ayoub","Abghour"));
 
-        ///// Calculate total absence hours
+        // Calculate total absence hours
         for (Absent_Stager as : absent_Staggers) {
             if (as != null) {
-                totalHours += 2.5; //// Assuming each absence is 2.5 hours
+                 totalHours += 2.5; //Assuming each absence is 2.5 hours
             }
         }
         // Update UI

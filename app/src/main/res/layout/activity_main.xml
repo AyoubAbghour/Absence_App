@@ -8,6 +8,7 @@
     android:padding="22dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"

@@ -3,16 +3,27 @@ package com.example.absenceapp;
 import java.time.LocalDateTime;
 
 public class Stager {
-    private String nom;
-    private String prenom;
+    public int contour;
+    public   String groupe;
+    public  String  matriculeEtudiant;
+    public String nom;
+    private final String prenom;
+    public  String nomPrenom;
     private LocalDateTime date;
     private Boolean isChecked;
 
-    public Stager(String nom, String prenom) {
+    // Default constructor is necessary for Firestore
+
+
+    public Stager( String groupe, String matriculeEtudiant, String nom, String nomPrenom, String prenom,int contour) {
+        this.groupe = groupe;
+        this.matriculeEtudiant = matriculeEtudiant;
         this.nom = nom;
+        this.nomPrenom = nomPrenom;
         this.prenom = prenom;
         this.date = LocalDateTime.now();
         this.isChecked = false;
+        this.contour=contour;
     }
 
     public LocalDateTime getDate() {
@@ -24,7 +35,7 @@ public class Stager {
     }
 
     public String getNom() {
-        return nom;
+        return  nom;
     }
 
     public boolean isChecked() {
@@ -35,3 +46,4 @@ public class Stager {
         this.isChecked = isChecked;
     }
 }
+
