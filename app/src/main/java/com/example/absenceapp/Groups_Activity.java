@@ -22,8 +22,6 @@ public class Groups_Activity extends AppCompatActivity {
     Button btn;
     Spinner sp;
     private FirebaseFirestore db;
-    private List<Map<String, Object>> groupList;
-    private List<String> groupIds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +39,7 @@ public class Groups_Activity extends AppCompatActivity {
         db.collection("groups").get().addOnCompleteListener(task -> {
             ProgressDialogUtil.dismissProgressDialog(); // Dismiss the progress dialog when the task is complete
             if (task.isSuccessful()) {
-                groupList = new ArrayList<>();
-                groupIds = new ArrayList<>();
-                List<String> groupNames = new ArrayList<>();
+                List<String> groupNames = new ArrayList<>(); //listgroup of names
                 for (QueryDocumentSnapshot document : task.getResult()) {
                     Map<String, Object> groupData = document.getData();
                     groupNames.add((String) groupData.get("groupe"));
@@ -67,7 +63,6 @@ public class Groups_Activity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 btn.setOnClickListener(v -> {
                     String selectedGroup = (String) parent.getItemAtPosition(position);
-
                     Intent intent = new Intent(Groups_Activity.this, MainActivity.class);
                     intent.putExtra("key_group", selectedGroup); // Correct key
                     startActivity(intent);

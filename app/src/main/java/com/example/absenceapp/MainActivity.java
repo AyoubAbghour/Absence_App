@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerViewAdapter adapter;
     public String data;
     private Button Btnsend;
-    int id ;
+    int classment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,8 +75,8 @@ public class MainActivity extends AppCompatActivity {
                             String nom = document.getString("nom");
                             String nomPrenom = document.getString("nomPrenom");
                             String prenom = document.getString("prenom");
-                               id++;
-                            Stager stager = new Stager(groupe, matriculeEtudiant, nom, nomPrenom, prenom,id);
+                            classment++; // classment de stager 
+                            Stager stager = new Stager(groupe, matriculeEtudiant, nom, nomPrenom, prenom,classment);
 
                             stageres.add(stager);
                         }

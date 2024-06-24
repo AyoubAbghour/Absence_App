@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.StagerViewHolder> {
     private ArrayList<Stager> stageres;
-
+ 
     public RecyclerViewAdapter(ArrayList<Stager> stageres) {
         this.stageres = stageres;
     }
